@@ -1,0 +1,91 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/029/320/295/original/bogdan-mb0sco-coffeeanim.gif?1601147277');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+.menu__hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 10vh;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.menu__hamburger span{
+    height: 5px;
+    transition: .3s all;
+	border-radius: 2px;
+    background: #fffc8d;
+}
+
+.bar{
+    width: 40px;
+}
+
+.short{
+    width: 20px;
+}
+
+.menu__content{
+    background-color: #fffc8d;
+    height: 100vh;
+    width: 0;
+    padding: 0;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .3s all;
+}
+
+.menu__links{
+    display: none;
+    height: 80%;
+    gap: 5px;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    font-family: Arial Black;
+}
+
+.creator__mark{
+    font-family: Calibri Light;
+    display: none;
+    color: rgba(0, 0, 0, .3);
+    transition: ease-in .2s;
+    cursor: pointer;
+}
+
+.creator__mark:hover{
+    color: Black
+}
+
+.link__area a{
+    list-style-type: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .12s ease-in;
+    color: rgba(0, 0, 0, .5);
+    text-decoration: none;
+    position: fixed;
+    z-index: 9999;
+}
+
+.link__area h2{
+    color: rgba(0, 0, 0, .2);
+    position: relative;
+    top: 50%;
+    left:0;
+}
+
+.link__area a:hover{
+    color: rgba(0, 0, 0, 1);
+}
